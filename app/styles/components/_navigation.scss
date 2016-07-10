@@ -1,0 +1,22 @@
+.top-bar {
+    background-color: $nav-background;
+    color: $nav-text-color;
+
+    ul {
+        background-color: $nav-background;
+    }
+
+    .menu-text {
+        color: $nav-text-color;
+    }
+}
+
+.top-bar-right {
+    font-weight: bold;
+
+    p {
+        padding: .7rem 1rem;
+        margin: 0;
+        line-height: 1;
+    }
+}
