@@ -59,7 +59,7 @@ class Countdown extends React.Component {
         });
     }
 
-    handleStatusChagne = (newStatus) => {
+    handleStatusChange = (newStatus) => {
         this.setState({
             countdownStatus: newStatus
         });
@@ -70,7 +70,7 @@ class Countdown extends React.Component {
         var renderControlArea = () => {
             if (countdownStatus !== 'stopped') {
                 return <Controls countdownStatus={countdownStatus}
-                        onStatusChange={this.handleStatusChagne} />
+                        onStatusChange={this.handleStatusChange} />
                 } else {
                     return <CountdownForm onSetCountdown={this.handleSetCountdown} />
                 }
@@ -78,6 +78,7 @@ class Countdown extends React.Component {
 
         return (
             <div>
+                <h1 className="page-title">Countdown App</h1>
                 <Clock totalSeconds={count} />
                 {renderControlArea()}
             </div>
